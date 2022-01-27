@@ -1,8 +1,12 @@
 const express = require('express');
 const { MongoClient } = require('mongodb');
+const cors = require('cors');
 const app = express();
 const port = 5000;
 
+
+app.use(cors());
+app.use(express.json())
 // user: myQuiz
 // pass: z1yBo8Gt7oLBZZJT
 
